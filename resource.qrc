@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>translations/multilotek_pl_PL.qm</file>
+        <file>images/multilotek128.png</file>
+    </qresource>
+</RCC>

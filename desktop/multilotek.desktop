@@ -1,0 +1,13 @@
+[Desktop Entry]
+Exec=multilotek
+Name=Multilotek
+Icon=/usr/share/icons/multilotek48.png
+Type=Application
+Categories=Qt;KDE;Game;
+Comment=Multilotek lottery game
+Comment[pl]=Symulacja gry w Multilotka 
+GenericName=Multilotek
+GenericName[pl]=Multilotek
+Encoding=UTF-8
+Terminal=false
+X-KDE-StartupNotify=false

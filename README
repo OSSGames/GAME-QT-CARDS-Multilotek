@@ -1,0 +1,269 @@
+Multilotek - is a simulation of a Polish lottery game "Multi Lotek".
+
+
+Sources with the most up-to-date version of the program can be found at:
+
+    >>>   http://gitorious.org/multilotek   <<<
+
+
+////////////////// LAYOUT //////////////////
+
+The program consists of five classes:
+- mainwindow - shows the window and all of its elements
+- drawing - draws the numbers and does all calculations related to it
+- statistics - runs statistics of the performed drawings
+- export_import - exports the data from the program into a file and imports it back again
+- about - shows information about the author of the program
+
+two forms:
+- mainwindow form - the main window with drawing, statistics etc.
+- about form - a small window with the information about the author of the program
+
+and non-class files:
+- globals - contains constant global values, arrays and functions
+
+
+////////////////// INSTALLATION //////////////////
+
+If you want to compile the application on any platform, make sure you have Qt libraries.
+You can download Qt SDK from:
+    http://www.qtsoftware.com/downloads
+
+---------------
+
+Easy way: Open the project in Qt Creator and build it. Run the application and have fun!
+
+---------------
+
+Another way:
+
+LINUX
+If you prefer using command lines (i.e. on Linux), open a terminal and go to the top level
+source directory (usually the same as where this file, README, is located) with this command:
+
+    cd /path/to/source_directory
+    
+and compile and build the program with these:
+
+    qmake
+    make
+    
+Then you can run the application by typing:
+
+    ./multilotek
+
+Additionally on Linux you can install the application with:
+
+    sudo make install
+
+Now you will find the application in your system menu under the Games category.
+Enjoy!
+
+.............
+
+WINDOWS
+If you want to build the application on Windows from a terminal, I recommend using
+Qt Command Prompt (installed with Qt SDK) and these commands:
+
+    cd path\to\source_directory
+    qmake CONFIG+=release
+    mingw32-make
+    cd release
+    multilotek.exe
+
+If you want to launch the compiled program later without the medium of Qt Creator
+or the terminal, fo instance from Files Explorer, you have to have these libraries:
+
+    QtCore4.dll, QtGui4.dll, mingw10.dll.
+
+You can find them in the Qt SDK installation folder.
+After inserting them into the folder with the executable file or into
+C:\Windows\system32, the application will start with no errors.
+
+
+////////////////// SUPPORTED SYSTEMS //////////////////
+
+The program has been tested on the following systems:
+
+  Windows XP Professional SP3
+  Ubuntu 9.04 Jaunty Jackalope 32-bit
+  Gentoo
+
+The program should compile and work on any system from a family of Linux, Windows
+and MacOS.
+
+
+////////////////// DEVELOPING THE PROGRAM //////////////////
+
+I encourage  you to further develop my program. You can redistribute and modify it
+under the terms of the GPL v3 free software licence, which contents are located
+in COPYING file. GPL v3 lets you modify the code in any way you like, but if you want
+to publish your modified version of the program, you will have to include the source
+codes with changes that you made.
+
+Sources with the most up-to-date version of the program can be found at:
+
+    >>>   http://gitorious.org/multilotek   <<<
+
+
+You can also translate the program to other languages. A detailed tutorial how to
+do it can be found on
+
+    http://doc.qtsoftware.com/4.5/linguist-manual.html
+
+In short:
+In order to obtain texts to translate from the source files, use a command:
+
+    lupdate multilotek.pro
+
+Texts are inserted into a file with .ts extension.
+You have to open this file in Qt Linguist and translate it.
+
+Then with a command:
+
+    lrelease multilotek.pro
+
+all .ts files are compiled to .qm format and the program includes them inside itself
+during a build process.
+
+
+////////////////// BUG REPORTING //////////////////
+
+All bugs can be reported to piekarzarkadiusz@gmail.com
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+
+Multilotek - to symulacja polskiej loterii Multi Lotka.
+
+
+Źródła z aktualną wersją programu znajdują się na:
+
+    >>>   http://gitorious.org/multilotek   <<<
+
+
+////////////////// STRUKTURA //////////////////
+
+Program składa się z pięciu klas:
+- mainwindow - wyświetla główne okno i wszystkie jego elementy
+- drawing - losuje liczby i przeprowadza wszelkie obliczenia z tym związane
+- statistics - prowadzi statystyki wykonanych losowań
+- export_import - eksportuje dane z programu do pliku i importuje je z powrotem
+- about - pokazuje informacje o autorze programu
+
+dwóch okienek:
+- mainwindow - główne okno z losowaniem, statystykami itd.
+- about - okienko z informacjami o autorze programu
+
+i plików bez klasy:
+- globals - zawiera stałe globalne wartości, tablice i funkcje
+
+
+////////////////// INSTALACJA //////////////////
+
+Jeśli chcesz skompilować program na dowolnym systemie, upewnij się, że masz biblioteki Qt.
+Możesz je zdobyć, na przykład ściągając Qt SDK ze strony:
+    http://www.qtsoftware.com/downloads
+
+---------------
+
+Łatwy sposób: Otwórz projekt w Qt Creatorze i zbuduj go. Uruchom program i się baw!
+
+---------------
+
+Inny sposób:
+
+LINUX
+Jeśli wolisz używać linii komend, otwórz terminal i przejdź do najwyższego katalogu
+ze źródłami (zwykle to ten sam katalog, w którym znajduje się ten plik, czyli README)
+za pomocą:
+
+    cd /sciezka/do/katalogu_ze_zrodlami
+
+i skompiluj i zbuduj program za pomocą tych komend:
+
+    qmake
+    make
+
+Teraz możesz uruchomić program wpisując:
+
+    ./multilotek
+
+Dodatkowo na Linukse możesz zainstalować program poprzez:
+
+    sudo make install
+
+Od teraz znajdziesz program w menu systemu w kategorii Gry. Miłej zabawy!
+
+.............
+
+WINDOWS
+Jeśli chcesz zbudować program na Windowsie poprzez terminal, polecam użycie
+Qt Command Prompt (instalowane razem z Qt SDK) oraz tych komend:
+
+    cd sciezka\do\katalogu_ze_zrodlami
+    qmake CONFIG+=release
+    mingw32-make
+    cd release
+    multilotek.exe
+
+Aby potem uruchamiać gotowy program bez pośrednictwa  Qt Creatora lub terminala,
+na przykład z Eksploratora plików, należy mieć następujące biblioteki:
+
+    QtCore4.dll, QtGui4.dll, mingwm10.dll
+
+Znajdują się one w katalogu instalacyjnym Qt SDK.
+Po umieszczeniu ich w katalogu z plikiem wykonywalnym lub w C:\Windows\system32
+program będzie uruchamiał się bez błędów.
+
+
+////////////////// WSPIERANE SYSTEMY //////////////////
+
+Program został przetestowany na następujących systemach:
+
+  Windows XP Professional SP3
+  Ubuntu 9.04 Jaunty Jackalope 32-bit
+  Gentoo
+
+Program powinien kompilować się i działać na dowolnym systemie z rodziny Linux, Windows
+i MacOS.
+
+
+////////////////// ROZWIJANIE PROGRAMU //////////////////
+
+Zachęcam do rozwijania mojego programu. Możesz go rozprowadzać i modyfikować na zasadach
+licencji wolnego oprogramowania GPL v3, której treść jest umieszczona w pliku COPYING.
+GPL v3 pozwala ci na dowolne modyfikowanie kodu, ale jeśli chciałbyś swoją zmodyfikowaną
+wersję programu upublicznić, musisz także dołączyć kody źródłowe ze zmianami, które
+wprowadziłeś.
+
+Źródła z aktualną wersją programu znajdują się na:
+
+    >>>   http://gitorious.org/multilotek   <<<
+
+
+Możesz także tłumaczyć program na inne języki. Szczegółowy poradnik, jak to robić,
+znajdziesz na
+
+    http://doc.qtsoftware.com/4.5/linguist-manual.html
+
+W skrócie:
+Aby wyciągnąć z plików źródłowych teksty do tłumaczenia, używa się komendy:
+
+    lupdate multilotek.pro
+
+Teksty są umieszczane w pliku o rozszerzeniu .ts. 
+Plik ten należy otworzyć w Qt Linguist i przetłumaczyć.
+
+Następnie za pomocą komendy:
+
+    lrelease multilotek.pro
+
+wszystkie pliki .ts są kompilowane do formatu .qm i program podczas budowania się
+sam włącza je do siebie.
+
+
+////////////////// RAPORTOWANIE BŁĘDÓW //////////////////
+
+Wszelkie błędy proszę zgłaszać na piekarzarkadiusz@gmail.com
